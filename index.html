@@ -343,16 +343,7 @@
 <li>local</li>
 <li>testing</li>
 <li>staging</li>
-<li>production</li>
-</ul>
-<h1 id="开发专用的扩展包"><a href="#开发专用的扩展包" class="headerlink" title="开发专用的扩展包"></a>开发专用的扩展包</h1><ul>
-<li><p>安装</p>
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer <span class="keyword">require</span> laracasts/generators --dev</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>加载</p>
-  <p style="text-align:left">开发专用的 <code>provider</code> 绝不在 <code>config/app.php</code> 中配置，必须在 <code>app/Providers/AppServiceProvider.php</code> 文件中使用一下方式：<br>  </p>
-
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">$this</span>-&gt;app-&gt;environment() == <span class="string">'local'</span>) &#123;</span><br><span class="line">        <span class="keyword">$this</span>-&gt;app-&gt;register(<span class="string">'Laracasts\Generators\GeneratorsServiceProvider'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>production
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/11/10/laravel最佳实践/#more" rel="contents">
@@ -498,8 +489,7 @@
 
       
         
-          
-            <h3 id="php常用文件操作"><a href="#php常用文件操作" class="headerlink" title="php常用文件操作"></a>php常用文件操作</h3><ol>
+          <h3 id="php常用文件操作"><a href="#php常用文件操作" class="headerlink" title="php常用文件操作"></a>php常用文件操作</h3><ol>
 <li>文件创建/打开<ul>
 <li>fopen：（创建并）打开一个文件或URL地址</li>
 </ul>
@@ -509,50 +499,14 @@
 <li>file_put_conttent：向文件写入内容，等同一次调用fopen,fwrite以及fclose函数</li>
 </ul>
 </li>
-<li>文件读取<ul>
-<li>fread：读取文件，可安全用于二进制文件</li>
-<li>fgets：从文件读取一行数据，并将文件指针指向下一行</li>
-<li>fgetc：从文件中逐字读取文件数据，直到文件结束</li>
-<li>file_get_content：把整个文件读入一个字符串</li>
-<li>file：把整个文件读取一个数组中，数组中的每个单元都是文件中相应的一行</li>
-</ul>
-</li>
-<li>检测文件是否存在<ul>
-<li>file_exists：检查文件或目录是否存在</li>
-</ul>
-</li>
-<li>检查文件是否可读、写、执行<ul>
-<li>is_readable：是否可读</li>
-<li>is_writable：是否可写</li>
-<li>is_executable：是否可执行</li>
-</ul>
-</li>
-<li>文件拷贝<ul>
-<li>copy：拷贝文件</li>
-</ul>
-</li>
-<li>文件删除<ul>
-<li>unlink：删除文件</li>
-</ul>
-</li>
-<li>获取文件大小、类型、修改时间等信息<ul>
-<li>filesize：文件大小</li>
-<li>filetype：文件类型</li>
-<li>filemtime：文件修改时间</li>
-</ul>
-</li>
-<li>文件指针<ul>
-<li>fclose：关闭文件指针</li>
-<li>feof：测试文件指针是否到了文件结束的位置</li>
-<li>fseek：在文件指针中定位</li>
-<li>rewind：倒回文件指针位置</li>
-<li>ftell：返回文件指针读、写位置</li>
-</ul>
-</li>
 </ol>
-<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/20/php文件处理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
