@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Henry&#39;s Blog">
 <meta property="og:description" content="app_env常用值 local testing staging production">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-10T18:17:03.000Z">
+<meta property="og:updated_time" content="2018-11-10T18:59:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="laravel最佳实践">
 <meta name="twitter:description" content="app_env常用值 local testing staging production">
@@ -344,8 +344,10 @@
 <li>local</li>
 <li>testing</li>
 <li>staging</li>
-<li>production<a id="more"></a>
-<h1 id="开发专用的扩展包"><a href="#开发专用的扩展包" class="headerlink" title="开发专用的扩展包"></a>开发专用的扩展包</h1></li>
+<li>production</li>
+</ul>
+<a id="more"></a>
+<h1 id="开发专用的扩展包"><a href="#开发专用的扩展包" class="headerlink" title="开发专用的扩展包"></a>开发专用的扩展包</h1><ul>
 <li><p>安装</p>
   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer <span class="keyword">require</span> laracasts/generators --dev</span><br></pre></td></tr></table></figure>
 </li>
@@ -359,7 +361,7 @@
 <p>例如：<br>.env文件中设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CDN_DOMAIN=cdndomain.com</span><br></pre></td></tr></table></figure></p>
 <p>config/app.php文件中设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">‘cdn_domain’ =&gt; env(&apos;CDN_DOMAIN&apos;M,null)</span><br></pre></td></tr></table></figure></p>
 <h1 id="自定义辅助函数"><a href="#自定义辅助函数" class="headerlink" title="自定义辅助函数"></a>自定义辅助函数</h1><p>自定义辅助函数放在：<code>bootstrap/helper.php</code>，并在<code>bootstrap/app.php</code>文件顶部进行加载<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="keyword">require</span> <span class="keyword">__DIR__</span> . <span class="string">'/helpers.php'</span>;</span><br><span class="line"></span><br><span class="line">    ...</span><br></pre></td></tr></table></figure></p>
-
+<h1 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h1>
       
     </div>
     
@@ -529,7 +531,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#app-env常用值"><span class="nav-number">1.</span> <span class="nav-text">app_env常用值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发专用的扩展包"><span class="nav-number">2.</span> <span class="nav-text">开发专用的扩展包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置信息和环境变量"><span class="nav-number">3.</span> <span class="nav-text">配置信息和环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义辅助函数"><span class="nav-number">4.</span> <span class="nav-text">自定义辅助函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#app-env常用值"><span class="nav-number">1.</span> <span class="nav-text">app_env常用值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发专用的扩展包"><span class="nav-number">2.</span> <span class="nav-text">开发专用的扩展包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置信息和环境变量"><span class="nav-number">3.</span> <span class="nav-text">配置信息和环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义辅助函数"><span class="nav-number">4.</span> <span class="nav-text">自定义辅助函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#路由"><span class="nav-number">5.</span> <span class="nav-text">路由</span></a></li></ol></div>
             
 
           </div>
