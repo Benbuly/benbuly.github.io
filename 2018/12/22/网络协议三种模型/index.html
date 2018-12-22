@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="php,">
+  <meta name="keywords" content="网络,">
 
 
 
@@ -79,18 +79,24 @@
 
 
 
-<meta name="description" content="php常用文件操作 文件创建/打开 fopen：（创建并）打开一个文件或URL地址   文件写入 fwrite：向文件写入内容，可安全用于二进制文件 file_put_conttent：向文件写入内容，等同一次调用fopen,fwrite以及fclose函数">
-<meta name="keywords" content="php">
+<meta name="description" content="OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系三层关系：七层是标准；五层是七层和四层整合版本；四层具体实现版本 一、OSI七层模型应用层(Application)、表示层(Presentation)、会话层(Session)、传输层(Transport)、网络层(NetWork)、数据链路层(Data Link)、物理层(Physical)">
+<meta name="keywords" content="网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php文件处理">
-<meta property="og:url" content="http://benbuly.github.io/2018/10/20/php文件处理/index.html">
+<meta property="og:title" content="网络协议三种模型">
+<meta property="og:url" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/index.html">
 <meta property="og:site_name" content="Henry&#39;s Blog">
-<meta property="og:description" content="php常用文件操作 文件创建/打开 fopen：（创建并）打开一个文件或URL地址   文件写入 fwrite：向文件写入内容，可安全用于二进制文件 file_put_conttent：向文件写入内容，等同一次调用fopen,fwrite以及fclose函数">
+<meta property="og:description" content="OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系三层关系：七层是标准；五层是七层和四层整合版本；四层具体实现版本 一、OSI七层模型应用层(Application)、表示层(Presentation)、会话层(Session)、传输层(Transport)、网络层(NetWork)、数据链路层(Data Link)、物理层(Physical)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-22T16:50:58.000Z">
+<meta property="og:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/20170822224422517.png">
+<meta property="og:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/20170822224527532.png">
+<meta property="og:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/764050-20150904094019903-1923900106.jpg">
+<meta property="og:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/20170822224933262.png">
+<meta property="og:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/4039680_1523328974264_E4E1F3318AF5F32719A15808E8D8458B.gif">
+<meta property="og:updated_time" content="2018-12-22T16:42:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php文件处理">
-<meta name="twitter:description" content="php常用文件操作 文件创建/打开 fopen：（创建并）打开一个文件或URL地址   文件写入 fwrite：向文件写入内容，可安全用于二进制文件 file_put_conttent：向文件写入内容，等同一次调用fopen,fwrite以及fclose函数">
+<meta name="twitter:title" content="网络协议三种模型">
+<meta name="twitter:description" content="OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系三层关系：七层是标准；五层是七层和四层整合版本；四层具体实现版本 一、OSI七层模型应用层(Application)、表示层(Presentation)、会话层(Session)、传输层(Transport)、网络层(NetWork)、数据链路层(Data Link)、物理层(Physical)">
+<meta name="twitter:image" content="http://benbuly.github.io/2018/12/22/网络协议三种模型/20170822224422517.png">
 
 
 
@@ -120,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://benbuly.github.io/2018/10/20/php文件处理/">
+  <link rel="canonical" href="http://benbuly.github.io/2018/12/22/网络协议三种模型/">
 
 
 
 
 
-  <title>php文件处理 | Henry's Blog</title>
+  <title>网络协议三种模型 | Henry's Blog</title>
   
 
 
@@ -253,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://benbuly.github.io/2018/10/20/php文件处理/">
+    <link itemprop="mainEntityOfPage" href="http://benbuly.github.io/2018/12/22/网络协议三种模型/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Henry">
@@ -270,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">php文件处理</h1>
+          <h1 class="post-title" itemprop="name headline">网络协议三种模型</h1>
         
 
         <div class="post-meta">
@@ -282,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-20T20:36:21+08:00">
-                2018-10-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-22T22:31:48+08:00">
+                2018-12-22
               </time>
             
 
@@ -320,60 +326,28 @@
       
 
       
-        <h3 id="php常用文件操作"><a href="#php常用文件操作" class="headerlink" title="php常用文件操作"></a>php常用文件操作</h3><ol>
-<li>文件创建/打开<ul>
-<li>fopen：（创建并）打开一个文件或URL地址</li>
-</ul>
-</li>
-<li>文件写入<ul>
-<li>fwrite：向文件写入内容，可安全用于二进制文件</li>
-<li>file_put_conttent：向文件写入内容，等同一次调用fopen,fwrite以及fclose函数</li>
-</ul>
-</li>
-</ol>
+        <h1 id="OSI七层协议、TCP-IP四层和五层协议体系结构之间的关系"><a href="#OSI七层协议、TCP-IP四层和五层协议体系结构之间的关系" class="headerlink" title="OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系"></a>OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系</h1><p><code>三层关系：七层是标准；五层是七层和四层整合版本；四层具体实现版本</code></p>
+<p>一、OSI七层模型<br>应用层(Application)、表示层(Presentation)、会话层(Session)、传输层(Transport)、网络层(NetWork)、数据链路层(Data Link)、物理层(Physical)</p>
 <a id="more"></a>
-<ol start="3">
-<li>文件读取<ul>
-<li>fread：读取文件，可安全用于二进制文件</li>
-<li>fgets：从文件读取一行数据，并将文件指针指向下一行</li>
-<li>fgetc：从文件中逐字读取文件数据，直到文件结束</li>
-<li>file_get_content：把整个文件读入一个字符串</li>
-<li>file：把整个文件读取一个数组中，数组中的每个单元都是文件中相应的一行</li>
-</ul>
-</li>
-<li>检测文件是否存在<ul>
-<li>file_exists：检查文件或目录是否存在</li>
-</ul>
-</li>
-<li>检查文件是否可读、写、执行<ul>
-<li>is_readable：是否可读</li>
-<li>is_writable：是否可写</li>
-<li>is_executable：是否可执行</li>
-</ul>
-</li>
-<li>文件拷贝<ul>
-<li>copy：拷贝文件</li>
-</ul>
-</li>
-<li>文件删除<ul>
-<li>unlink：删除文件</li>
-</ul>
-</li>
-<li>获取文件大小、类型、修改时间等信息<ul>
-<li>filesize：文件大小</li>
-<li>filetype：文件类型</li>
-<li>filemtime：文件修改时间</li>
-</ul>
-</li>
-<li>文件指针<ul>
-<li>fclose：关闭文件指针</li>
-<li>feof：测试文件指针是否到了文件结束的位置</li>
-<li>fseek：在文件指针中定位</li>
-<li>rewind：倒回文件指针位置</li>
-<li>ftell：返回文件指针读、写位置</li>
-</ul>
-</li>
-</ol>
+<p>二、TCP/IP四层模型<br>TCP/IP是一个四层的体系结构，主要包括：应用层、运输层、网际层和网络接口层。从实质上讲，只有上边三层，网络接口层没有什么具体的内容。</p>
+<p><img src="20170822224422517.png" alt=""><br><img src="20170822224527532.png" alt=""></p>
+<p>三、五层体系结构<br>五层体系结构包括：应用层、运输层、网络层、数据链路层和物理层。<br>五层协议只是OSI和TCP/IP的综合，实际应用还是TCP/IP的四层结构。为了方便可以把下两层称为网络接口层。</p>
+<p>三种模型结构对比：<br><img src="764050-20150904094019903-1923900106.jpg" alt=""><br><img src="20170822224933262.png" alt=""></p>
+<p>四、各层的作用<br>1、物理层：</p>
+<p>主要定义物理设备标准，如网线的接口类型、光纤的接口类型、各种传输介质的传输速率等。它的主要作用是传输比特流（就是由1、0转化为电流强弱来进行传输,到达目的地后在转化为1、0，也就是我们常说的数模转换与模数转换）。这一层的数据叫做比特。 　　</p>
+<p>2、数据链路层：</p>
+<p>定义了如何让格式化数据以进行传输，以及如何让控制对物理介质的访问。这一层通常还提供错误检测和纠正，以确保数据的可靠传输。 　　</p>
+<p>3、网络层：</p>
+<p>在位于不同地理位置的网络中的两个主机系统之间提供连接和路径选择。Internet的发展使得从世界各站点访问信息的用户数大大增加，而网络层正是管理这种连接的层。 　　</p>
+<p>4、运输层：</p>
+<p>定义了一些传输数据的协议和端口号（WWW端口80等），如：<br>TCP（transmission control protocol –传输控制协议，传输效率低，可靠性强，用于传输可靠性要求高，数据量大的数据）<br>UDP（user datagram protocol–用户数据报协议，与TCP特性恰恰相反，用于传输可靠性要求不高，数据量小的数据，如QQ聊天数据就是通过这种方式传输的）。 主要是将从下层接收的数据进行分段和传输，到达目的地址后再进行重组。常常把这一层数据叫做段。 　　</p>
+<p>5、会话层：</p>
+<p>通过运输层（端口号：传输端口与接收端口）建立数据传输的通路。主要在你的系统之间发起会话或者接受会话请求（设备之间需要互相认识可以是IP也可以是MAC或者是主机名） 　　</p>
+<p>6、表示层：</p>
+<p>可确保一个系统的应用层所发送的信息可以被另一个系统的应用层读取。例如，PC程序与另一台计算机进行通信，其中一台计算机使用扩展二一十进制交换码（EBCDIC），而另一台则使用美国信息交换标准码（ASCII）来表示相同的字符。如有必要，表示层会通过使用一种通格式来实现多种数据格式之间的转换。 　　</p>
+<p>7、应用层：</p>
+<p>是最靠近用户的OSI层。这一层为用户的应用程序（例如电子邮件、文件传输和终端仿真）提供网络服务。</p>
+<p>补充：<br><img src="4039680_1523328974264_E4E1F3318AF5F32719A15808E8D8458B.gif" alt=""></p>
 
       
     </div>
@@ -391,7 +365,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/php/" rel="tag"># php</a>
+            <a href="/tags/网络/" rel="tag"># 网络</a>
           
         </div>
       
@@ -404,15 +378,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/11/10/laravel最佳实践/" rel="next" title="laravel最佳实践">
+                <i class="fa fa-chevron-left"></i> laravel最佳实践
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/10/laravel最佳实践/" rel="prev" title="laravel最佳实践">
-                laravel最佳实践 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -544,7 +518,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#php常用文件操作"><span class="nav-number">1.</span> <span class="nav-text">php常用文件操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OSI七层协议、TCP-IP四层和五层协议体系结构之间的关系"><span class="nav-number">1.</span> <span class="nav-text">OSI七层协议、TCP/IP四层和五层协议体系结构之间的关系</span></a></li></ol></div>
             
 
           </div>
